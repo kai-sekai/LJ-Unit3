@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Journal 3</title>
+    <style>
+        div {
+            border: 2px solid black;
+            margin-bottom: 30px;
+            padding: 20px;
+            justify-content: center;
+            text-align: center;
+        }
+        .left-align {
+            border: none;
+            text-align: left;
+            width: fit-content;
+            margin: 0 auto;
+            padding-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Part A</h1>
+
+    <div>
+        <h2>Form using GET method</h2>
+        <form action="/index.html" method="GET">
+            <label for="name">Your Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email"><br>
+            <label for="message">Please write your message:</label><br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message"></textarea><br>
+
+            <input type="submit" value="Submit using GET">
+        </form>
+    </div>
+
+    <div>
+        <h2>Form using POST method</h2>
+        <form action="/index.html" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email"><br>
+            <label for="message">Please write your message:</label><br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message"></textarea><br>
+
+            <input type="submit" value="Submit using POST">
+        </form>
+    </div>
+
+    <h1>Part B</h1>
+    <div>
+        <form>
+            <label>Choose your marital status:</label><br>
+            <div class="left-align">
+                <input type="radio" id="single" name="mStatus" value="single">
+                <label for="single">Single</label><br>
+                <input type="radio" id="married" name="mStatus" value="married">
+                <label for="married">Married</label><br>
+                <input type="radio" id="widow" name="mStatus" value="widow">
+                <label for="widow">Widow</label><br>
+                <input type="radio" id="none" name="mStatus" value="none">
+                <label for="none">Prefer not to say</label><br>
+            </div>
+            
+        </form>
+        <br>
+    </div>
+
+    <div>
+        <form>
+            <label for="diabetes">Do you have any medical history of Diabetes?</label>
+            <select name="diabetes" id="diabetes">
+                <option value="default" selected disabled hidden>Select an Option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </form>
+        <br>
+    </div>
+
+    <div>
+        <form action="/index.html" method="POST">
+            <label for="review">Write your review:</label><br>
+            <textarea name="review" id="review" cols="30" rows="10" placeholder="Write your feedback for your recent food delivery service with us..."></textarea>
+            <br>
+            <input type="submit" value="submit">
+        </form>
+        <br>
+    </div>
+
+    <div>
+        <form>
+            <label for="fav-sport">Select your favorite sport:</label>
+            <select name="fav-sport" id="fav-sport">
+                <option value="default" selected disabled hidden>Select an Option</option>
+                <option value="basketball">Basketball</option>
+                <option value="football">Football</option>
+                <option value="swimming">Swimming</option>
+                <option value="chess">Chess</option>
+                <option value="esport">eSport</option>
+                <option value="bowling">Bowling</option>
+                <option value="tennis">Tennis</option>
+                <option value="archery">Archery</option>
+            </select>
+        </form>
+    </div>
+</body>
+
+</html>
